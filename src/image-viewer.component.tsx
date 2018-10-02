@@ -596,7 +596,7 @@ export default class ImageViewer extends React.Component<Props, State> {
                     paddingRight: 40,
                     paddingTop: 10,
                     paddingBottom: 10,
-              }}onPress={() => this.props.onCancel()}>
+              }}onPress={() => this.props.onCancel}>
                   <Text style={{
                       fontSize: 25,
                       color: 'black',
