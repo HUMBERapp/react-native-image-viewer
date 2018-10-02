@@ -588,7 +588,22 @@ export default class ImageViewer extends React.Component<Props, State> {
               </View>
             )}
           <View style={[{ bottom: 0, position: 'absolute', zIndex: 9 }, this.props.footerContainerStyle]}>
-            {this!.props!.renderFooter!(this.state.currentShowIndex)}
+            <View>
+              <TouchableHighlight style={{
+                    borderRadius: 80,
+                    backgroundColor: '#ffbf2e',
+                    paddingLeft: 40,
+                    paddingRight: 40,
+                    paddingTop: 10,
+                    paddingBottom: 10,
+              }}onPress={() => this.props.onCancel()}>
+                  <Text style={{
+                      fontSize: 25,
+                      color: 'black',
+                      fontWeight: "bold"
+                  }}>VOLVER</Text>
+              </TouchableHighlight>
+            </View>
           </View>
         </Animated.View>
       </Animated.View>
