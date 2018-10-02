@@ -587,7 +587,7 @@ export default class ImageViewer extends React.Component<Props, State> {
                 </TouchableOpacity>
               </View>
             )}
-          <View style={[{ bottom: 0, position: 'absolute', zIndex: 9 }, this.props.footerContainerStyle]}>
+          <View style={[{ bottom: 20, position: 'absolute', zIndex: 9 }, this.props.footerContainerStyle]}>
             <View>
               <TouchableHighlight style={{
                     borderRadius: 80,
